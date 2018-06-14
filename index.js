@@ -10,6 +10,7 @@ function getBase64(img, callback) {
 }
 
 
+const ws = new WebSocket(`ws://${location.hostname}:8089`);
 class Avatar extends React.Component {
   state = {
     loading: false,
